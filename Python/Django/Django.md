@@ -289,6 +289,7 @@ Carpeta base
 
 ### Configuración admin app
 
+
 ```python
 from django.contrib import admin
 from .models import App
@@ -317,3 +318,4 @@ class BlogPostAdmin(SummernoteModelAdmin):
 
 admin.site.register(Modelo_Importado, Configuracion_admin )
 ```
+

@@ -1,7 +1,62 @@
+# Datos globales [ Context ]
+
+Crea un archivo `context_processors.py` 
+
+```python
+
+from apps.product.models import Category
+
+def menu_categories(request): # NOMBRE DE LA FUNCION DEBEN SER IGUALES
+    categories = Category.objects.all()
+
+    return {'menu_categories': categories} # NOMBRE DEL OBJETO LLAMABLE DEBEN SER IGUALES
+```
+
+Agrégalo a los templetes en `sttings.py`
+
+```python
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+                'apps.product.context_processors.menu_categories', # add thist                
+            ],
+        },
+    }
+    ]
+```
+
+La view para llamar los resultados de esa url
+
+```python
+def formato(request, formato):
+    titulos = Titulo.objects.filter(formato = formato ).all()
+    ctx = {"titulos": titulos}
+    return render(request, 'core/home.html', ctx)
+```
+
+Puede ser llamado en cualquier pagina
+
+```python
+{% for i in menu_categories %}
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'category' i.slug %}">{{ i.title }}</a>
+  </li>
+{% endfor %}
+```
+
+
 [Motor de plantillas](https://docs.djangoproject.com/en/4.0/ref/templates/)
 
 
-## Templetes  y uso de datos
+# Templetes  y uso de datos
 
 - Comprueba si el objeto es el primero de la lista
     ```python

@@ -45,3 +45,32 @@ PGUSER=localuserpg PGPASSWORD=localpassword heroku pg:pull DATABASE_URL mylocald
 
 
 https://stackoverflow.com/questions/65222869/how-do-i-solve-this-problem-to-use-psql-psql-error-fatal-role-postgres-d
+
+# PostgreSQL en Django
+
+### Instalación de psycopg2
+
+Previamente instalar PostgreSql
+
+`pip3 install psycopg2-binary ==2.8.6`
+
+`pip3 install psycopg2==2.9.3 ==2.8.6`
+
+> para la versión correcta de python `https://github.com/nwcell/psycopg2-windows`
+> 
+- Crea una base de datos desde pgAdmin
+
+### configuración Settings base de datos Django
+
+```python
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'test', #< == nombre de la base de datos creada en pgadmin
+            'USER': 'postgres',
+            'PASSWORD': 'clave de instalacion',
+            'HOST': 'localhost',
+            'PORT': 5432,
+        }
+    }
+```
