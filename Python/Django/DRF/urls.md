@@ -2,6 +2,15 @@
 
 ## Directo de views al settings/urls
 
+only with viewsets.ModelViewSet
+
+```py
+class TodoView(viewsets.ModelViewSet):       # add this
+    serializer_class = TodoSerializer        # add this
+    queryset = Todo.objects.all()            # add this
+```
+
+
 ```python
 from django.contrib import admin
 from django.urls import path, include                   # add this
