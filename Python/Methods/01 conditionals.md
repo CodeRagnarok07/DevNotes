@@ -71,6 +71,7 @@ except:
 try
 assert
 assertEqual
+
 Expresiones | EXCECCIONES
 
 ```python

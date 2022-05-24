@@ -1,25 +1,29 @@
 # como centrar un div:
     
-```
-display:grid;
-place-items: center;
-```
+```css
 
-```
-display:flex;
-justify-content:center;
-align-items: center;
-```
+cd1{
+    display:grid;
+    place-items: center;
+}
 
-```
-display:block;
-margin-left:auto;
-margin-right:auto;
-```
+cd2{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
 
-```
-position:absolute;
-Top:50%;
-Left:50%;
-transform: translate (-50%, -50%)
+cd3{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+cd4{
+    position:absolute;
+    Top:50%;
+    Left:50%;
+    transform: translate (-50%, -50%)
+}
+
 ```
