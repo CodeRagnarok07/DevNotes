@@ -71,6 +71,7 @@ STATICFILES_DIRS = [
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static"]
+
 ```
 
 `index.html`
