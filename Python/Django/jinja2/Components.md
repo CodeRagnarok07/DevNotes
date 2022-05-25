@@ -1,7 +1,4 @@
-
-### Componentes  HTML + Django
-
-- Place Holder de formularios
+# Place Holder de formularios
     
 ```html
 <form id="form" method="POST" action="">
