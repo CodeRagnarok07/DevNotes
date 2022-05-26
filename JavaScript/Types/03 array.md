@@ -105,3 +105,19 @@ let b = a.join(" ")         // regresa de un array a un string separa por el val
 
 console.log(b)
 ```
+
+
+```js
+const array = [1,2,3,4,5,6,7,8]
+
+array.map((valor, index)=> console.log(index, 2*valor, ) ) // devuelve cada uno de los valores 
+
+const filter = array.filter((valor,index)=> (valor === 5 || valor > 7) ) // acepta una condicion
+console.log(filter) // 5 , 8
+
+const reducer = array.reduce((acumulado, valor)=> acumulado * valor , 2) // acumulador, valor, index que comienza
+console.log(reducer) // 40255
+
+const find = array.find(e=> e > 1) // solo el primer elemento que coincide con la condicion
+console.log(find) // 2
+```
