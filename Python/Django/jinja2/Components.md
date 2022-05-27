@@ -94,5 +94,26 @@
         form_contact[field].classList.add("leading-none", "text-gray-50", "p-3", "focus:outline-none", "focus:border-blue-700", "mt-4", "border-0", "bg-gray-800", "rounded")
     }
 </script>
+
+<script>
+
+    const add = document.getElementById("add")
+    const seeform = document.getElementById("seeform")
+
+    const form = document.getElementById("form")
+    let fields = 9
+
+    for (var field of Array(fields).keys()) {
+        form[field].classList.add("leading-none", "text-gray-50", "p-3", "focus:outline-none", "focus:border-blue-700", "mt-4", "border-0", "bg-gray-800", "rounded")
+        form[field].placeholder = form[field].name
+    }
+    add.onclick = function () {
+        seeform.classList.toggle("hidden")
+        add.textContent = "delete"  
+    }
+
+</script>
+
+
 ```
     

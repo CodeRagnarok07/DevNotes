@@ -6,6 +6,7 @@ función que se ejecuta cuando se pinta el dom
 
 ```jsx
 $(document).ready(function() {
+  
   });
 ```
 
@@ -27,7 +28,7 @@ $("#target4").remove()
 
 ```
 
-# selección de elementos
+# SELECTORES
 
 ```js
 // modifica al elemento padre directo

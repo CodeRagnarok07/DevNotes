@@ -110,3 +110,9 @@ Comandos para debug y optimización
 
 \q => Cerrar la consola
 ```
+
+
+ public | django_migrations             | table | angel
+ public | django_session                | table | angel
+ public | wordbook_flashcard            | table | angel
+ public | wordbook_wordterm             | table | angel

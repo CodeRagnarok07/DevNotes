@@ -1,5 +1,5 @@
 
-# Buscador
+# BUSCADOR
 
 `views.py`
 
@@ -34,14 +34,14 @@ es de forma global ya que se accede a la busqueda desde una url
 <!-- # Buscador -->
 <form  method="get" action="{% url 'search' %}">
 
-  <input  type="search"  name="query">
+  <input  type="text"  name="query">
 
   <button type="submit">Search</button>
 
 </form>
 ```
 
-# Similares
+# SIMILARES
 
 objeto + objetos tag similar random
 
@@ -83,7 +83,7 @@ def product_detail_view(request, product_id):
 > 3. vuelve a el query del objeto principal y llama a todos los objetos
 > 4. excluye el objeto llamado al principio de la lista de similares
 
-# Texto enriquecido
+# TEXT RICH
 
 - Summernote
     
@@ -120,6 +120,7 @@ const capitalizeFirstLetter = (word) => {
 
 # Generar Urls unicas
 
+
 ```py
 from django.template.defaultfilters import slugify
 
@@ -141,6 +142,7 @@ class Projects(models.Model):
             queryset = Projects.objects.all().filter(slug__iexact=slug).count() 
         self.slug = slug 
         super(Projects, self).save(*args, **kwargs)
+        
 ```
 - Urls automatica y unica
     
@@ -175,3 +177,110 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Category, CategoryAdmin)
 
 ```
+
+# CRUD by methods
+
+## create new object
+
+`view.py`
+```py
+def add_new_enterprise(request, vacant_id):
+    query = request.POST.get('query', '')
+    if request.method == 'POST':
+        vacant = Vacant.objects.get(pk=vacant_id)
+        enterprise = Enterprise.objects.get_or_create(name=query)
+        vacant.enterprise = enterprise[0]
+        vacant.save()
+        return redirect("index")
+```
+
+`url.py`
+```py
+    path('add-new-enterprise/<int:vacant_id>/', add_new_enterprise, name="add_new_enterprise"),
+```
+
+```html
+ <form  method="POST" action="{% url 'add_new_enterprise' i.id %}">
+{% csrf_token %}
+<div class="flex">
+    <input  class="w-full" type="text"  name="query">                    
+    <button type="submit">ADD</button>            
+</div>
+</form>
+```
+
+
+## delete object
+
+
+`view.py`
+```py
+def delete_vacant(request, vacant_id):
+    vacant = get_object_or_404(Vacant, pk=vacant_id)
+    vacant.delete()
+    return redirect("index")
+    # return JsonResponse({'success': "delete"})
+```
+
+`url.py`
+```py
+path('delete-vacant/<int:vacant_id>/', delete_vacant, name="delete_vacant"),
+```
+
+```html
+<a href="{% url 'delete_vacant' i.id %}" method="delete">delete</a>
+```
+
+## Method 2
+
+
+
+`view.py`
+```py
+def delete_vacant(request, vacant_id):
+    vacant = get_object_or_404(Vacant, pk=vacant_id)
+    vacant.delete()
+    return redirect("index")
+    # return JsonResponse({'success': "delete"})
+```
+
+`url.py`
+```py
+path('vacant/<str:vacant_slug>/', vacant, name="vacant"), #allow delete
+
+```
+
+```html
+<script>
+    function getCookie(name) {
+        var cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+    async function delete_vacant(slug) {
+        let csrftoken = getCookie('csrftoken');
+        const apiRes = await fetch(`vacant/${slug}/`, {
+            method: 'DELETE',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'X-CSRFToken': csrftoken
+            }
+        });
+        if(apiRes.status == 200){
+        }
+    }
+</script>
+```
+
+ 

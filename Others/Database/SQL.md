@@ -44,11 +44,11 @@ trae todo de la tabla
 
 la clausular WhERE se puede usar en SELECT UPDATE DELETE 
 
- `SELECT * FROM Table WERE campo1 = 'dato1'`
+ `SELECT * FROM Table WhERE campo1 = 'dato1'`
 
 - Operadores Logicos de WHERE
     
-    `SELECT * FROM Table WERE NOT campo1 = 'dato1'`
+    `SELECT * FROM Table WhERE NOT campo1 = 'dato1'`
     
     AND ; selecionar dos elementos
     
@@ -58,12 +58,12 @@ la clausular WhERE se puede usar en SELECT UPDATE DELETE
     
     Combinaciones
     
-    `SELECT * FROM Table WERE idTable=2 AND campo1 = 'dato1' OR idCapmpo > 1`
+    `SELECT * FROM Table WhERE idTable=2 AND campo1 = 'dato1' OR idCapmpo > 1`
     
 
 - Operadores relacionales de WHERE
     
-    `SELECT * FROM Table WERE campo1 <> 'dato1'`
+    `SELECT * FROM Table WhERE campo1 <> 'dato1'`
     
     = ; Igual
     
