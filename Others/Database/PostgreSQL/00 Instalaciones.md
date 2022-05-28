@@ -17,6 +17,32 @@ $ sudo apt-get install libpq-dev
 
 `sudo apt-get install libpq-dev`  Forzar la instalación
 
+# Install postgres and create database
+
+#### 1. **.- Install PostgresSQl**
+
+```text
+$ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+$ sudo apt-get update
+$ sudo apt-get -y install postgresql postgresql-contrib
+$ sudo apt-get install libpq-dev
+```
+
+#### 2. **execute postgresql**
+
+```text
+$ sudo service postgresql status
+$ sudo service postgresql start
+```
+
+#### 3. **Create database and password**
+
+```text
+sudo -u postgres psql => start console
+postgres=# alter user Postgres with password 'newPasword';
+postgres=# CREATE DATABASE name;
+```
 
 # installacion en Win
 
@@ -70,4 +96,18 @@ Configura la contraseña :
 
 1. en ‘win’ abre pgadmin
     1. Databases -> Create ->Database
-2.
+
+
+# PostgreSQL en Django
+
+### Instalación de psycopg2
+
+Previamente instalar PostgreSql
+
+`pip3 install psycopg2-binary ==2.8.6`
+
+`pip3 install psycopg2==2.9.3 ==2.8.6`
+
+> para la versión correcta de python `https://github.com/nwcell/psycopg2-windows`
+> 
+- Crea una base de datos desde pgAdmin
