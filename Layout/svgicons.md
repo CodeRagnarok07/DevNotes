@@ -1,5 +1,8 @@
 # Twitter icons
-<div style="display: flex;">
+
+
+<div style="display: flex; flex-direction: col;">
+
 <div style="width: 5rem;" name="twitter">
     <svg viewBox="0 0 24 24" aria-hidden="true"
         class="r-13v1u17 r-4qtqp9 r-yyyyoo r-16y2uox r-8kz0gk r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp">
@@ -11,6 +14,7 @@
     </svg>
 </div>
 
+###### home
 <div style="width: 5rem;" name="home">
     <svg viewBox="0 0 24 24" aria-hidden="true"
         class="r-1nao33i r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
@@ -25,6 +29,7 @@
     </svg>
 </div>
 
+###### search
 <div style="width: 5rem;" name="search">
     <svg viewBox="0 0 24 24" aria-hidden="true"
         class="r-1nao33i r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
@@ -36,6 +41,7 @@
     </svg>
 </div>
 
+###### notifications
 <div style="width: 5rem;" name="notifications">
     <svg viewBox="0 0 24 24" aria-hidden="true"
         class="r-1nao33i r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
@@ -47,6 +53,7 @@
     </svg>
 </div>
 
+###### messages
 <div style="width: 5rem;" name="messages">
     <svg viewBox="0 0 24 24" aria-hidden="true"
         class="r-1nao33i r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
@@ -58,6 +65,7 @@
     </svg>
 </div>
 
+###### bookmarks
 <div style="width: 5rem;" name="bookmarks">
     <svg viewBox="0 0 24 24" aria-hidden="true"
         class="r-1nao33i r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
@@ -69,6 +77,7 @@
     </svg>
 </div>
 
+###### list
 <div style="width: 5rem;" name="list">
     <svg viewBox="0 0 24 24" aria-hidden="true"
         class="r-1nao33i r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
@@ -83,6 +92,7 @@
     </svg>
 </div>
 
+###### profile
 <div style="width: 5rem;" name="profile">
     <svg viewBox="0 0 24 24" aria-hidden="true"
         class="r-1nao33i r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
@@ -94,6 +104,7 @@
     </svg>
 </div>
 
+###### options
 <div style="width: 5rem;" name="options">
     <svg viewBox="0 0 24 24" aria-hidden="true"
         class="r-1nao33i r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr">
@@ -108,6 +119,7 @@
     </svg>
 </div>
 
+###### writing
 <div style="width: 5rem;" name="writing">
     <svg viewBox="0 0 24 24" aria-hidden="true"
         class="r-jwli3a r-4qtqp9 r-yyyyoo r-1472mwg r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp">
@@ -121,3 +133,36 @@
 </div>
 
 # other
+
+
+<div style="display: flex; flex-direction: col;">
+
+###### DATE
+
+
+<div style="width: 5rem;" name="twitter">
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+<rect width="64" height="64" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_217_2" transform="scale(0.015625)"/>
+</pattern>
+<image id="image0_217_2" width="64" height="64" xlink:href="data:image/png;base64,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"/>
+</defs>
+</svg>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
