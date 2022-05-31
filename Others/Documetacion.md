@@ -1,5 +1,6 @@
 ## Algunas cosas que la documentación debe tener
     
+
 - Proyectos de ejemplo ( deploy)
 - Comandos para levantar o correr el proyecto
 - Guía de iniciación (geting started)
@@ -16,3 +17,9 @@
 - Documentación visual de componentes (frontend) o tests de integracioens (backend)
 - Breve descripción
 - Guía de estilo, filosofia, estilo del codigo, como fue pensado
+
+# el codigo es la mejor documentacion
+
+- descripcion de microservicios
+- paquetes usados
+- orden de archivos y flujo de trabajo

@@ -1,3 +1,7 @@
+# tipos de datos
+http://codigoelectronica.com/blog/postgresql-tipo-de-datos
+
+# sentencias
 ### PRIMARY KEY y FOREIGN KEY
 
 `CREATE TABLE tabla_1(idTabla_1 INTEGER PRIMARY KEY AUTOINCREMENT);` 

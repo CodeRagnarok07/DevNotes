@@ -33,6 +33,7 @@ $("#target4").remove()
 ```js
 // modifica al elemento padre directo
 $("#target1").parent().css("background-color", "red")
+
 // modifica al elemento hijo directo
 $("#right-well").children().css("color", "orange")
 // solo selecciona los segundos elemntos de la classe que estan uno despues de otro
