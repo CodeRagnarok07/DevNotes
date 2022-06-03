@@ -18,8 +18,10 @@
 - Breve descripción
 - Guía de estilo, filosofia, estilo del codigo, como fue pensado
 
-# el codigo es la mejor documentacion
+# el codigo limpio es la mejor documentacion
 
 - descripcion de microservicios
 - paquetes usados
 - orden de archivos y flujo de trabajo
+
+

@@ -12,8 +12,9 @@
    4. password = postgres
 
 # pgadmin
-
 database > querytools for write slq
+
+# Comandos en PGadmin
 
 
 

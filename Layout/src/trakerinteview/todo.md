@@ -9,3 +9,8 @@
   - [ ] vacants
   - [ ] networking
   - [ ] next interview
+
+
+# enterprise sera opcional ono a uno
+# agragar mail a vacant y medio de comunicacion, charfield
+# feedback sera uno a uno opcional
