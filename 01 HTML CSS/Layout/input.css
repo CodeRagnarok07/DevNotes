@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn{
+    @apply p-2 flex justify-center rounded-full items-center hover:cursor-pointer hover:bg-slate-800
+}
+
+.hover-primary{
+    @apply hover:bg-slate-800
+}
+
+.board{
+    @apply h-full flex justify-start items-start snap-x overflow-x-scroll overflow-y-hidden scroll-smooth space-x-2
+}
+
+.board .card{
+    @apply bg-slate-700 text-black py-2 px-1  m-2 rounded-md
+}
+
+/* list */
+.board .list{
+    @apply flex flex-col flex-shrink-0 w-[15rem] snap-y overflow-y-scroll overflow-x-hidden   
+}
+
+/* itens list */
+.board .list li{
+    @apply bg-slate-400 shadow-black my-1 mx-1 p-1  rounded-sm shadow-sm  
+}
+
+/* head list */
+.board .list .head{
+    @apply text-slate-300 my-2 px-2 -mt-1 flex justify-between items-center
+}

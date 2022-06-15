@@ -1,0 +1,36 @@
+html, body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+}
+
+
+.scrollbar::-webkit-scrollbar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    width: 6px;
+    height: 10px;
+  }
+.scrollbar::-webkit-scrollbar-track {
+
+    border-radius: 100vh;
+    background: #626f9b;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+
+    background: #5b65ff;
+    border-radius: 100vh;
+    border: 3px solid #000000;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+
+    background: #95bce9;
+}
