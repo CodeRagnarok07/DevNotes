@@ -297,7 +297,6 @@ ON prod.product_id = cop.product_id; -- relation table1_id = table2_id
 
 ```sql
 -- JOIN + N tables
-
 SELECT client_name, co.date,products.product_name, cop.cuantity, products.product_price, cop.cuantity * products.product_price AS total   -- this fields
 FROM client_order AS co
 JOIN client_order_product AS cop 
