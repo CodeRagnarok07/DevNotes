@@ -44,7 +44,7 @@ Instalación de Versiones:
 
 `nvm ls-remote`  ⇒ ver las versiones de node disponibles
 
-`nvm install v16.14.0` ⇒ elegir versión
+`nvm install v16.15.1` ⇒ elegir versión
 
 `sudo apt install nodejs`  instalacion de node
 
