@@ -1,17 +1,12 @@
-"""saber si una lista es incremental o no"""
-
+"""determina si una lista es incremental o no"""
 lista = [3,2,1]
-
 def incre(List):
-
     reverse = 2
     next= 0
     List.reverse()
-
     for delet  in List:
         new = List[:]
         new.remove(delet)
-    
         for i in new:
             if next < len(List)-1:
                 if i < List[next-reverse]:
