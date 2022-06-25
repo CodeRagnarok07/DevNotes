@@ -32,6 +32,23 @@ $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 2
 
 `$ sudo apt autoremove python3` ⇒ unistall python
 
+## install pip
+Option 1
+
+```
+$ sudo apt update
+$ sudo apt install python3-venv python3-pip
+```
+
+Option 2
+
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py   ⇒ descarga paquetes iniciales
+python get-pip.py
+python -m pip install --upgrade pip
+```
+
+
 ### Node.js
 
 Instalación de Versiones: 
