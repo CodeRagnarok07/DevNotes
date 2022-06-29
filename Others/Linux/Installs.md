@@ -66,7 +66,11 @@ Instalación de Versiones:
 `sudo apt install nodejs`  instalacion de node
 
 `sudo apt install npm` Instalacion de npm
+`npm install -g npm@8.13.1`
+
 
 `nodejs -v` Version de node
+
+
 
 [https://docs.microsoft.com/es-es/windows/dev-environment/javascript/nodejs-on-wsl](https://docs.microsoft.com/es-es/windows/dev-environment/javascript/nodejs-on-wsl)
