@@ -22,7 +22,7 @@
 
 Linux 
 
-`sudo apt install python3-pip`
+`sudo apt install python3-pip python3-virtualenv`
 
 `python3 -m pip install --upgrade pip`
 

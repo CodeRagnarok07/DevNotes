@@ -54,22 +54,20 @@ python -m pip install --upgrade pip
 Instalación de Versiones: 
 
 `sudo apt install wget`  instalador de versiones
-
 `wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash`  
-
 `source ~/.profile`  ⇒ permiso para ejecutar el wget
-
 `nvm ls-remote`  ⇒ ver las versiones de node disponibles
-
-`nvm install v16.15.1` ⇒ elegir versión
+`nvm install v16.15.1` `nvm install --lts`  ⇒ elegir versión
 
 `sudo apt install nodejs`  instalacion de node
-
 `sudo apt install npm` Instalacion de npm
 `npm install -g npm@8.13.1`
 
+$ sudo apt install yarn
+To check the Installed version of Yarn:
 
-`nodejs -v` Version de node
+$ yarn --version
+
 
 
 

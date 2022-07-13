@@ -11,6 +11,7 @@ $ sudo apt-get -y install postgresql postgresql-contrib
 $ sudo apt-get install libpq-dev
  
 
+
 ```
 
 `sudo apt-get -y install postgresql postgresql-contrib`  ⇒ paquetes necesarios 
