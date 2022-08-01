@@ -7,6 +7,8 @@
 POSTGRES_NAME=name
 POSTGRES_PASSWORD=newPasword
 ```
+DATABASE_URL=sqlite:///db.sqlite3
+DATABASE_URL=postgres://postgres:123456@localhost:5432/vocabulary_app  
 
 
 ```python

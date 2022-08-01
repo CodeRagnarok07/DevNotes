@@ -169,7 +169,7 @@ class Projects(models.Model):
 
 ## generar urls apartir del titulo en admin
 
-```json
+```py
 class CategoryAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     list_display = ('title', 'slug')
