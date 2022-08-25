@@ -1,3 +1,10 @@
 {
-    "compo": "asdas"
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/components/*": [
+                "src/components/*"
+            ]
+        }
+    }
 }

@@ -6,7 +6,6 @@ export default function slugify(str) {
         .replace(/[^\w\s-]/g, '')
         .replace(/[\s_-]+/g, '-')
         .replace(/^-+|-+$/g, '');
-
     return slug
 
 }

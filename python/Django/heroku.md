@@ -6,6 +6,8 @@
     2. `npm install -g heroku`
 3. Login in cdm  `heroku login -i`
 4. **Create** a n*ew Heroku app*either via Heroku CLI (`$ heroku create APP_NAME`) or directly in the **[Heroku dashboard](https://dashboard.heroku.com/)**:
+
+heroku git:remote -a rierangel 
 5. Add remote git heroku `$ heroku git:remote -a your-heroku-app`   (go to your project)
 6. Configurar los buildpacks
     1. `heroku plugins:install buildpacks`
