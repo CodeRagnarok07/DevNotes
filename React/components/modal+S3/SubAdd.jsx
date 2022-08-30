@@ -14,10 +14,10 @@ export default function SubAdd({ allObjet, objeto, setObjeto, index }) {
 
     return (
 
-        <div
+        <Link
             className='mb-8 space-x-2 center '>
                 {/* SLUG */}
-                <div className='ligh py-1 px-2 flex flex-col w-2/3'>
+                <Link className='ligh py-1 px-2 flex flex-col w-2/3'>
                     <label htmlFor="size" className='small text-color1'>
                         name
                     </label>
@@ -25,8 +25,8 @@ export default function SubAdd({ allObjet, objeto, setObjeto, index }) {
                         value={objeto.size}
                         onChange={(e) => handleChange(e)}
                         name="size" placeholder='Categoria..' className='bg-transparent' id='size' type="text" />
-                </div>
-                <div className='ligh py-1 px-2 flex flex-col w-2/3'>
+                </Link>
+                <Link className='ligh py-1 px-2 flex flex-col w-2/3'>
                     <label htmlFor="stock" className='small text-color1'>
                         Stock
                     </label>
@@ -34,19 +34,19 @@ export default function SubAdd({ allObjet, objeto, setObjeto, index }) {
                         value={objeto.stock}
                         onChange={(e) => handleChange(e)}
                         name="stock" placeholder='Categoria..' className='bg-transparent' id='stock' type="number" />
-                </div>
+                </Link>
                 {/* END SLUG */}
 
 
 
-            <div
+            <Link
                 onClick={Delete}
                 className='cursor-pointer border hover:border-red-500 p-1 my-1 text-red-600 font-bold'>
                 Eliminar
-            </div>
+            </Link>
 
 
-        </div>
+        </Link>
 
 
 

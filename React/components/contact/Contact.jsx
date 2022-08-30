@@ -18,11 +18,11 @@ const Contact = () => {
 
     };
     return (
-        <div className="flex justify-center">
-            <div className='my-24 mx-[2%] md:mx-[15%] xl:mx-[30%] w-full sm:w-3/4 md:1/2 flex flex-col justify-center border-4 rounded-lg py-5 border-indigo-900'>
+        <Link className="flex justify-center">
+            <Link className='my-24 mx-[2%] md:mx-[15%] xl:mx-[30%] w-full sm:w-3/4 md:1/2 flex flex-col justify-center border-4 rounded-lg py-5 border-indigo-900'>
                 <h1 className="text-center text-4xl font-bold" >Contact me</h1>
                 <form ref={form} onSubmit={sendEmail} className="w-full my-8">
-                    <div className="flex flex-col justify-center ">
+                    <Link className="flex flex-col justify-center ">
                         <input className="w-[90%] md:w-2/3 my-2 mx-auto m-[2%] shaodw shadow-md rounded-full px-4 focus:shadow-blue-600 shadow-sky-900 bg-transparent 
                         selection:active:focus:bg-transparent focus:outline-none"
                             autoComplete='off' aria-autocomplete='off' type="email" name="from_email" required placeholder="Email:"
@@ -35,18 +35,18 @@ const Contact = () => {
                         selection:active:focus:bg-transparent focus:outline-none h-40"
                             name="message" required placeholder="Message:"
                         />
-                    </div>
-                        <div className='flex justify-center items-center'>
+                    </Link>
+                        <Link className='flex justify-center items-center'>
                             <button type="submit"
                             className='-mb-[7rem] px-10 py-3 font-bold 
                             shadow-md rounded-lg shadow-indigo-900
                             bg-gradient-to-r from-blue-700 to-indigo-900
                             hover:bg-gradient-to-l transition-color ease-out duration-300
                             ' >submit</button>
-                        </div>
+                        </Link>
                 </form>
-            </div >
-        </div >
+            </Link >
+        </Link >
 
     )
 }

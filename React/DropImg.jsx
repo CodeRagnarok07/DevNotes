@@ -30,17 +30,17 @@ export default function DropImg({ children, ID, item, setItem }) {
     }
 
     return (
-        <div className='cursor-pointer'>
+        <Link className='cursor-pointer'>
             <label htmlFor={ID} 
                 onDrop={(e) => handleDrop(e)}
                 onDragOver={(e) => {e.preventDefault()}}
             >
                 {item ?
                     <>
-                        <div className='relative opacity-50 p-5 border border-dashed border-black m-5 rounded-md'>
+                        <Link className='relative opacity-50 p-5 border border-dashed border-black m-5 rounded-md'>
                             <img src={URL.createObjectURL(item)} alt="" />
                             <p className='small center underline'> editar</p>
-                        </div>
+                        </Link>
                     </>
                     :
                     <>
@@ -55,6 +55,6 @@ export default function DropImg({ children, ID, item, setItem }) {
                 className='hidden' type="file" name="" id={ID} />
             {/* IMAGEN */}
 
-        </div>
+        </Link>
     )
 }

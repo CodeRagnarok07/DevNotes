@@ -23,20 +23,20 @@ export default function useModal() {
 
   const ModalComponent = () => {
     return (
-      <div className={styles.modalbg} >
-        <div className={styles.card} ref={cardRef} >
-          <div className={styles.header} >
+      <Link className={styles.modalbg} >
+        <Link className={styles.card} ref={cardRef} >
+          <Link className={styles.header} >
             header
             <button onClick={() => setActive(false)}>boton cerrarme</button>
-          </div>
-          <div className={styles.body} >
+          </Link>
+          <Link className={styles.body} >
             body
-          </div>
-          <div className={styles.footer} >
+          </Link>
+          <Link className={styles.footer} >
             footer
-          </div>
-        </div>
-      </div>
+          </Link>
+        </Link>
+      </Link>
     )
   }
   return { ModalComponent, active, setActive }
