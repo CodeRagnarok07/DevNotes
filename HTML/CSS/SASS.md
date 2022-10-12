@@ -124,7 +124,7 @@ h2{
     
 ```css
 @for $j from 1 through 6 {
-    .text-#{$j} { font-size: 15px * $j; }
+    .text-#{$j} { font-size: 15px - $j; }
 }
 
 </style>
