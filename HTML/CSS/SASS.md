@@ -73,7 +73,7 @@ h3{
     }
 ```
     
-## Mixin
+# Mixin
 son variables pero con todo un conjunto de 
 
 ```css
@@ -92,7 +92,7 @@ h2{
     }
 ```
     
-## Condicionales
+# Condicionales
     
 ```css
 @mixin border-stroke($val) {
@@ -120,7 +120,7 @@ h2{
 
 ```
     
-## ciclos
+# ciclos
     
 ```css
 @for $j from 1 through 6 {
@@ -136,7 +136,7 @@ h2{
 <p class="text-5">Hello</p>
 ```
     
-## for each
+# for each
     
 ```css
 @each $color in blue, black, red {
@@ -154,7 +154,7 @@ h2{
 <div class="red-bg"></div>
 ```
 
-## for map en un array
+# for map en un array
     
 ```css
 $colors: (color1: blue, color2: red, color3: green);
@@ -164,7 +164,7 @@ $colors: (color1: blue, color2: red, color3: green);
 }
 ```
     
-## While
+# While
     
 ```css
 $x: 1;

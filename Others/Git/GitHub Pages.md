@@ -5,7 +5,6 @@ https://github.com/  => cuenta => settings =>  Developer settings => Personal ac
 
 
 ### install gh-pages
-
 - `$ npm install gh-pages`
 
 - `package.json`
@@ -30,3 +29,5 @@ https://github.com/  => cuenta => settings =>  Developer settings => Personal ac
 ```
 
 `$ npm run deploy`
+
+ "homepage": "https://coderagnarok07.github.io/Template_Aduana_Paraguay/", //add this
