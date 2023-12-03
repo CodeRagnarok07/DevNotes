@@ -12,13 +12,15 @@
 - `sudo service postgresql stop` to stop running your database.
 - `sudo passwd postgres` You will get a prompt to enter your new password.
 
+### uri conection
+postgres://USER:PASSWORD@HOST:PORT/NAME 
 
 ### Comandos de postgreSql terminal
 
 - `\l`  ⇒ listado de bases de datos
 - `\q`  ⇒ salir de psql
 - `\c` ⇒ entra en la base de datos listada
-- `alter user postgres with password '123456';`  ⇒ modifica o restablece la contraseña del usuario `postgres`
+- `alter user postgres with password 'postgres';`  ⇒ modifica o restablece la contraseña del usuario `postgres`
 - Una ves dentro de una base de datos con `\c` se hace uso de las sentencias sql
 - `drop database;`  ⇒ elimina la base de datos
 
