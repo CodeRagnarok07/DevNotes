@@ -2,7 +2,9 @@
 (() => {
     const container = document.getElementsByTagName('html')[0];
     
+    hola :D 
 
+  
     if(window.matchMedia('(max-width: 1000px)').matches){
         container.setAttribute('data-theme', "dark");
 

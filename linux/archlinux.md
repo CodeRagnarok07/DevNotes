@@ -17,4 +17,12 @@ exit
 
 userdel test
 
+# pacman
+
+## Sync -S
+
+
+sudo pacman -S # instala paquetes 
+sudo pacman -Syu # actualiza paquetes
+
 
