@@ -1,4 +1,3 @@
-# [postgreSQL](/wiki/Database/PostgreSQL/postgresql.md)
 
 
 # integrate with Django
