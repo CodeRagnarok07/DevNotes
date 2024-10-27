@@ -36,7 +36,7 @@ increase number C-a
 
 
 
-## LazzyVim
+
 
 ### Tree files
 

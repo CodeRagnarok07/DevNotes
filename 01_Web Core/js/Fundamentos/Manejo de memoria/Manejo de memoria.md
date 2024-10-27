@@ -11,7 +11,7 @@ note-type: blog-startlight
 ---
 # Manejo de memoria
 
-**La gestión de memoria en [[Areas/Backlog/DevNote/01_Web Core/js/js|JavaScript]]se refiere a cómo el lenguaje de programación gestiona y libera recursos de memoria utilizados por una aplicación.**
+**La gestión de memoria en [[Areas/DevNote/01_Web Core/js/js|JavaScript]]se refiere a cómo el lenguaje de programación gestiona y libera recursos de memoria utilizados por una aplicación.**
 
 
 ## Heap (montón):

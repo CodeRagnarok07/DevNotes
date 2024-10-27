@@ -15,7 +15,7 @@ El Event Loop (ciclo de eventos) es un componente crucial en el runtime de JavaS
 
 el event loop Funciona como un bucle que verifica constantemente si hay tareas pendientes en la cola de mensajes (también conocida como message queue).
 
-JavaScript es un lenguaje de programación de un solo subproceso, lo que significa que ejecuta una tarea a la vez. (bloqueante)  Sin embargo, gracias al modelo de concurrencia basado en el [[Areas/Backlog/DevNote/01_Web Core/js/Fundamentos/Event loop/Event loop|Event loop]]  puede lograr el efecto de ejecución no bloqueante.
+JavaScript es un lenguaje de programación de un solo subproceso, lo que significa que ejecuta una tarea a la vez. (bloqueante)  Sin embargo, gracias al modelo de concurrencia basado en el [[Event loop|Event loop]]  puede lograr el efecto de ejecución no bloqueante.
 
 
 ### 1. **Call Stack**:

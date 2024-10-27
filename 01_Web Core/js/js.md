@@ -36,16 +36,16 @@ Para crear un roadmap o guía completa para dominar JavaScript a profundidad, es
 - **Introducción a JavaScript:** 
 	- Sintaxis básica
 	- variables
-	- tipos de datos [[Areas/Backlog/DevNote/01_Web Core/js/Fundamentos/DataTypes/DataTypes]]
-	- operadores[[Areas/Backlog/DevNote/01_Web Core/js/Fundamentos/Methods/conditionals]]
+	- tipos de datos [[DataTypes]]
+	- operadores[[conditionals]]
 	- estructuras de control
 		- if-else
 		- switch
 		- bucles), 
-	- [[Areas/Backlog/DevNote/01_Web Core/js/Fundamentos/Methods/funtions]]
-	- [[Areas/Backlog/DevNote/01_Web Core/js/Fundamentos/Methods/loops]]
+	- [[funtions]]
+	- [[loops]]
 - **Programación asíncrona y APIs no bloqueantes:** 
-	- [[Areas/Backlog/DevNote/01_Web Core/js/Fundamentos/runtime/runtime|Runtime]]
+	- [[runtime|Runtime]]
 	- Event loop
 	- callbacks
 	- promesas

@@ -2,6 +2,8 @@
 Status: Backlog
 ---
 
+
+
 ## mobile 
 https://www.youtube.com/watch?v=91kewK4_h4k
 
@@ -17,7 +19,7 @@ https://www.youtube.com/watch?v=91kewK4_h4k
 
 apps 
 - https://divestos.org/pages/our_apps#hypatia
-
+- https://privacytests.org/
 
 
 # canales de youtube
@@ -84,3 +86,16 @@ https://www.youtube.com/watch?v=OUrD3yBIQLw
 - [ ] Proteger red wifi y ocultar
 - [ ] La biblioteca de babel (la biblioteca que sabe todo)
 - [ ] Run Scripts de Js con bash sin Node
+- [ ] Proyectos
+	- [ ] hacer speed runs 
+		- [ ] Virtualizar equipos
+			- [ ] ArchLinux
+			- [ ] Android
+		- [ ] vulnerar redes y equipos y webs
+		- [ ] Nginx configuration
+		- [ ] Server configurations
+		- [ ] Docker configurations
+		- [ ] para proyectos largos configurar tools
+			- [ ] temux
+			- [ ] nvim
+			- [ ] IA 

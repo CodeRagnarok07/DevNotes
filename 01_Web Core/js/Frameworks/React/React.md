@@ -8,6 +8,9 @@ focus: false
 ---
 
 
+https://www.youtube.com/watch?v=uIAGyKxl878
+
+
 
 ## Virtual dom
 

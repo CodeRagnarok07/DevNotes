@@ -127,3 +127,51 @@ function rest(...vars){
 // 3
 // 4
 ```
+
+
+### que es una funcion de orden mayor en javascript HOC
+
+
+Una función de orden mayor es una función que puede tomar una o más funciones como argumentos y/o retornar una función como resultado. Son un concepto central en JavaScript y en la programación funcional en general.
+
+Por ejemplo, `map`, `filter`, y `reduce` son funciones de orden mayor porque aceptan funciones como argumentos para operar en los elementos de un array.
+
+
+```js
+function mayorQue(n) {
+  return function(m) {
+    return m > n;
+  };
+}
+
+let mayorQue10 = mayorQue(10);
+
+console.log(mayorQue10(11)); // true
+console.log(mayorQue10(9));  // false
+```
+
+En este ejemplo, `mayorQue` es una función de orden mayor porque retorna otra función. Es como darle superpoderes a tus funciones. ¿Quieres saber más sobre cómo usar estas funciones en tus proyectos?
+### que son las funciones generadoras?
+
+
+Las funciones generadoras en JavaScript son funciones que pueden pausar su ejecución y luego reanudarla, lo que permite trabajar con secuencias de valores. Se definen utilizando la sintaxis `function*` y usan la palabra clave `yield` para pausar y reanudar.
+
+Aquí tienes un ejemplo:
+
+
+
+```js
+function* contarHastaTres() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+
+const generador = contarHastaTres();
+
+console.log(generador.next().value); // 1
+console.log(generador.next().value); // 2
+console.log(generador.next().value); // 3
+```
+
+En este ejemplo, la función generadora `contarHastaTres` produce valores secuenciales cada vez que se llama a `next()`. Las generadoras son muy útiles para manejar datos grandes o infinitos de manera eficiente, ya que generan valores bajo demanda.
