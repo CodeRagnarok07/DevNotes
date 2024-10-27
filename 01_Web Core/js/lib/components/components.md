@@ -1,13 +1,13 @@
 
 %% Begin Waypoint %%
-- **[[Areas/DevNote/01_Web Core/js/lib/components/components]]**
+- **[[components]]**
 	- **carrusel**
 		- [[Carrusel With options]]
 		- **controls**
 
 		- **img_control**
 			- [[Carrusel img-control]]
-	- [[Areas/DevNote/01_Web Core/js/lib/components/components]]
+	- [[components]]
 
 %% End Waypoint %%
 
