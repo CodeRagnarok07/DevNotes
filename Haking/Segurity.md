@@ -37,7 +37,7 @@ apps
 - Brave
 - https://librewolf.net/
 - https://mullvad.net/en/browser
-- https://public.sqrx.com/web/
+
 
 
 sisodir730@inpsur.com
@@ -77,9 +77,10 @@ https://www.youtube.com/watch?v=OUrD3yBIQLw
 - https://www.youtube.com/watch?v=oFAVhojFM2o
 
 
-### Virus en imagenes
+### Virus en archivos
 
-- https://www.youtube.com/watch?v=tGDZLJe_b7w
+- [imagenes](https://www.youtube.com/watch?v=tGDZLJe_b7w)
+- [todos](https://www.youtube.com/watch?v=BKKjnTzxzTw)
 
 # Todo
 
