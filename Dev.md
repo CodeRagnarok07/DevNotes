@@ -89,7 +89,7 @@
 			- **Subsistema de Windows para Linux**
 				- [[02_custom]]
 				- [[index]]
-			- [[Untitled]]
+			- [[Clear Phone]]
 		- **[[Linux]]**
 			- [[archlinux]]
 			- [[Linux]]
@@ -125,7 +125,7 @@
 				- [[01 comandos]]
 				- [[02 pgadmin]]
 				- [[PLSQL]]
-			- [[SQL Server]]
+			- [[SQL/engins/SQL Server]]
 			- [[SQL]]
 			- [[SQLite3]]
 		- [[DevOps]]
@@ -183,7 +183,7 @@
 			- **DB-Conections**
 				- [[ORM]]
 				- [[postgresql]]
-				- [[SQL Server]]
+				- [[SQL/engins/SQL Server]]
 			- **Django + Next + Redux + JWT**
 				- [[0.- StartProject + settings]]
 				- [[1.- Register and login backend]]
@@ -267,7 +267,7 @@
 				- [[Linux]]
 				- [[phone camera]]
 				- [[screen]]
-				- [[Untitled]]
+				- [[Clear Phone]]
 				- [[Users]]
 			- **[[qemu]]**
 				- [[MacOs]]

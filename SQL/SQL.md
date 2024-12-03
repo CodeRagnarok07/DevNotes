@@ -2,46 +2,7 @@
 http://codigoelectronica.com/blog/postgresql-tipo-de-datos
 
 
-# PRIMARY KEY y FOREIGN KEY
-
-```SQL
-CREATE TABLE tabla_1(
-    id_tabla_1 INTEGER PRIMARY KEY AUTOINCREMENT
-); 
-CREATE TABLE tabla_2(
-    id_tabla_2 INTEGER PRIMARY KEY AUTOINCREMENT,
-    id_tabla_1 INTEGER,
-    FOREING KEY (id_Tabla_1) REFERENCES tabla_1(idTabla_1)
-    -- REFERENCES Hace referencia a la tabla 1
-);
-```
-
-PRIMARY KEY: es la que provee a las tablas, siempre se agrega como id a todas las tablas ⇒  `INTEGER PRIMARY KEY AUTOINCREMENT`
-
-#### Ejemplo1:
-
-```SQL
-CREATE TABLE carreras(
-    idCarrera INTEGER 
-    PRIMARY KEY AUTOINCREMENT,
-    Nombre varchar(30), 
-    duracion INTEGER
-);
-
-CREATE TABLE Alumnos(
-    idAlumnos INTEGER PRIMARY KEY AUTOINCREMENT,
-    nombre varchar(30),
-    apellido varchar(30),
-    segundo_apellido varchar(30),
-    email varchar(40),
-    id_carrera INTEGER,
-    FOREIGN KEY (id_carrera) REFERENCES carreras(idCarrera));
-    -- FOREIGN KEY: Es la que accede a las llaves primarias ⇒ 
-    -- FOREIGN KEY (id_carrera) REFERENCES carreras(idCarrera)
-
-
-
-```
+[[FOREIGN KEY]]
 
 
 
@@ -81,8 +42,7 @@ INSERT INTO tabla(campo1, campo2)
 VALUES('campo 1', 'campo2');
 
 -- SELECT; Selecciona un dato de una table por una clausula
-SELECT * FROM tablaName 
-where campo2 = ‘todos los que tengan este nombre’ 
+SELECT * FROM tablaName WHERE campo2 = ‘todos los que tengan este nombre’ 
 
 -- UPDATE actualiza un dato de una table por una clausula
 UPDATE tablaName 
@@ -112,8 +72,8 @@ SELECT DISTINCT product_type from products;
 ## Where y order By
 
 ```sql
--- Consultas
-select product_name, product_price from products WHERE product_type = 'café';
+
+SELECT product_name, product_price FROM products WHERE product_type = 'café';
 
 SELECT
     product_name || ' ' || product_price,
@@ -190,9 +150,6 @@ SELECT * FROM carreras WHERE nombre NOT LIKE 'a%'
 '_a%' --> comodin por que no se conocen las primeras letra pero si la segunda
 '%a' --> Termina con 
 '%a%' --> no empieza con a ni termina, pero lo tienen en el centro
-'a%' --> comienza con
-'a%' --> comienza con
-
 
 -- ORDER by ; ordenar 
 SELECT * FROM carreras ORDER by duracion
